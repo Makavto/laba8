@@ -1,2 +1,10 @@
-<h1>Laba8#input</h1>
-<p>Find me in app/views/laba8/input.html.erb</p>
+<h1>Задание: Дан массив чисел arr_n. Определить произведение элементов массива кратных 3 и поместить ее на место элемента с индексом k, где k – введенное значение.</h1>
+<%= form_tag("/laba8/view", :method => "get") do %>
+  <%= label_tag("Введите массив чисел:") %>
+  <%= text_field_tag(:v1, '7 4 6 8 9 10') %> <br/>
+  <br/>
+  <%= label_tag("Введите индекс k:") %>
+  <%= text_field_tag(:k, '2') %> <br/>
+  <br/>
+  <%= submit_tag "Resolve"%>
+<% end %>
